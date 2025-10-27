@@ -10,28 +10,7 @@ spring:
         locator:
           enabled: true
           lower-case-service-id: true
-      routes:
-        - id: product-service
-          uri: lb://product-service
-          predicates:
-            - Path=/api/products/**
-          filters:
-            - AuthFilter
-
-        - id: order-service
-          uri: lb://order-service
-          predicates:
-            - Path=/api/orders/**
-          filters:
-            - AuthFilter
-
-        - id: payment-service
-          uri: lb://payment-service
-          predicates:
-            - Path=/api/payments/**
-          filters:
-            - AuthFilter
-
+      
 management:
   endpoints:
     web:

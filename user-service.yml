@@ -5,13 +5,6 @@ spring:
   application:
     name: user-service
 
-  r2dbc:
-    url: r2dbc:postgresql://localhost:5432/reactive_ms_db
-    username: reactive_user
-    password: Reactive@123
-  datasource:
-    driver-class-name: org.postgresql.Driver
-
   main:
     web-application-type: reactive
 
